@@ -1,0 +1,49 @@
+name: sipalab
+description: "Aplikasi Peminjaman Alat Lab"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  crypto: ^3.0.6
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2
+  image_picker: ^1.1.2
+  excel: ^4.0.6
+  pdf: ^3.11.3
+  printing: ^5.14.3
+  share_plus: ^11.1.0
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.0
+  shared_preferences: ^2.2.2
+  sqflite: ^2.4.1
+  path: ^1.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+  # Package untuk generate icon logo aplikasi
+  flutter_launcher_icons: ^0.13.1
+
+# Pengaturan Logo Aplikasi
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logo.png"
+  min_sdk_android: 21
+
+flutter:
+  uses-material-design: true
+
+  # Mendaftarkan file gambar ke aset Flutter
+  assets:
+    - assets/logo.png
+    - assets/logo_sipalab_SL_transparent.png
